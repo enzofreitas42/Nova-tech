@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaTech Soluções | Inovação Digital</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-empresa" data-bs-offset="70">
+
+    <!-- NAVBAR -->
+    <nav id="navbar-empresa" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="bi bi-cpu-fill text-primary me-2"></i>NovaTech
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HOME / CARROSSEL DE IMAGENS -->
+    <header id="home">
+        <div id="carouselEmpresa" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselEmpresa" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselEmpresa" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselEmpresa" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=80" class="d-block w-100 carousel-img" alt="Desenvolvimento Web">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                        <h2>Transformamos Ideias em Realidade Digital</h2>
+                        <p>Soluções tecnológicas sob medida para impulsionar o seu negócio.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1600&q=80" class="d-block w-100 carousel-img" alt="Equipe trabalhando">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                        <h2>Equipe Especializada e Ágil</h2>
+                        <p>Foco total em performance, segurança e experiência do usuário.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80" class="d-block w-100 carousel-img" alt="Análise de dados">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                        <h2>Resultados Orientados por Dados</h2>
+                        <p>Estratégias digitais modernas para escalar suas vendas.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselEmpresa" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselEmpresa" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- SEÇÃO SOBRE (2 Colunas de 6: Texto + Botão | Imagem) -->
+    <section id="sobre" class="py-5">
+        <div class="container my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h2 class="fw-bold mb-3">Sobre a NovaTech Soluções</h2>
+                    <p class="lead text-muted">Conectando empresas ao futuro desde 2018.</p>
+                    <p>Somos uma agência especializada em desenvolvimento de software, design de interfaces e consultoria em transformação digital. Nossa missão é simplificar processos complexos através da tecnologia, entregando produtos robustos e intuitivos.</p>
+                    <a href="#servicos" class="btn btn-primary btn-lg mt-2">Conheça nossos serviços</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Equipe NovaTech" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO SERVIÇOS (4 Cards) -->
+    <section id="servicos" class="py-5 bg-light">
+        <div class="container my-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Nossos Serviços</h2>
+                <p class="text-muted">O que fazemos de melhor para o crescimento da sua empresa</p>
+            </div>
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0 card-servico">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-code-slash display-4 text-primary mb-3"></i>
+                            <h5 class="card-title fw-bold">Desenvolvimento Web</h5>
+                            <p class="card-text text-muted">Criação de sites institucionais, landing pages e sistemas web responsivos e rápidos.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0 card-servico">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-phone display-4 text-primary mb-3"></i>
+                            <h5 class="card-title fw-bold">Apps Mobile</h5>
+                            <p class="card-text text-muted">Aplicativos nativos e híbridos para Android e iOS focados na melhor experiência.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0 card-servico">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-palette display-4 text-primary mb-3"></i>
+                            <h5 class="card-title fw-bold">UI/UX Design</h5>
+                            <p class="card-text text-muted">Prototipagem e design de interfaces modernas, intuitivas e centradas no usuário.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0 card-servico">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-cloud-check display-4 text-primary mb-3"></i>
+                            <h5 class="card-title fw-bold">Cloud & DevOps</h5>
+                            <p class="card-text text-muted">Infraestrutura em nuvem escalável, segura e com monitoramento contínuo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DIFERENCIAIS (2 Colunas de 6 invertida: Imagem | Texto + Botão) -->
+    <section class="py-5">
+        <div class="container my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=800&q=80" alt="Suporte e Inovação" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-3">Por que escolher a NovaTech?</h2>
+                    <p class="lead text-muted">Atendimento próximo e entregas dentro do prazo.</p>
+                    <p>Utilizamos metodologias ágeis para que você acompanhe cada etapa do projeto em tempo real. Nosso suporte técnico dedicado garante que sua operação nunca pare, oferecendo segurança e tranquilidade para você focar no seu negócio.</p>
+                    <a href="#contato" class="btn btn-outline-primary btn-lg mt-2">Solicitar um orçamento</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO CONTATO (Formulário, Informações e Google Maps) -->
+    <section id="contato" class="py-5 bg-light">
+        <div class="container my-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Entre em Contato</h2>
+                <p class="text-muted">Tire suas dúvidas ou peça uma proposta comercial</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Formulário de Contato -->
+                <div class="col-lg-6">
+                    <div class="card shadow-sm border-0 p-4">
+                        <h4 class="mb-3">Envie uma mensagem</h4>
+                        <form id="formContato">
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Nome Completo</label>
+                                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">E-mail</label>
+                                <input type="email" class="form-control" id="email" placeholder="seuemail@exemplo.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label">Telefone</label>
+                                <input type="tel" class="form-control" id="telefone" placeholder="(00) 00000-0000" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label">Mensagem</label>
+                                <textarea class="form-control" id="mensagem" rows="4" placeholder="Como podemos ajudar?" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Enviar Mensagem</button>
+                        </form>
+                        <!-- Alerta de feedback do JavaScript -->
+                        <div id="alertaSucesso" class="alert alert-success mt-3 d-none" role="alert">
+                            Mensagem enviada com sucesso! Entraremos em contato em breve.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Informações de Contato + Mapa -->
+                <div class="col-lg-6">
+                    <div class="card shadow-sm border-0 p-4 h-100">
+                        <h4 class="mb-3">Nossa Localização e Contatos</h4>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">
+                                <i class="bi bi-geo-alt-fill text-primary me-2"></i>
+                                <strong>Endereço:</strong> Av. Brasil, 5500 - Centro, Cascavel - PR
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-telephone-fill text-primary me-2"></i>
+                                <strong>Telefone:</strong> (45) 3222-0000 / (45) 99999-0000
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-envelope-fill text-primary me-2"></i>
+                                <strong>E-mail:</strong> contato@novatechsolucoes.com.br
+                            </li>
+                        </ul>
+
+                        <!-- Google Maps Embed -->
+                        <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57891.56499361724!2d-53.49398215136719!3d-24.955479499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3d413367387a5%3A0x600a73783b5d167a!2sCascavel%2C%20PR!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 NovaTech Soluções. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript Personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>
