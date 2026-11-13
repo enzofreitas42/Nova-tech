@@ -1,0 +1,27 @@
+/* Rolagem suave ao clicar nos links da navbar */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Ajuste para compensar a altura da navbar fixa */
+section {
+    scroll-margin-top: 60px;
+}
+
+/* Padroniza a altura das imagens do carrossel */
+.carousel-img {
+    height: 75vh;
+    min-height: 400px;
+    object-fit: cover;
+    filter: brightness(0.8);
+}
+
+/* Efeito sutil de elevação nos cards de serviço */
+.card-servico {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-servico:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12) !important;
+}
